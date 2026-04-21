@@ -120,12 +120,46 @@
         </div>
     </section>
 
-    <footer id="contato">
-        <p>Vamos conversar? Entre em contato comigo!</p>
-        <div class="links">
-            <a target="_blank" href="https://github.com/AraujoKayke">GitHub</a> | <a target="_blank" href="https://www.linkedin.com/in/kaykearaujo/">LinkedIn</a>
+    <section id="contato" class="contato-section">
+        <h2>Contato</h2>
+        <p>Vamos conversar? Me mande uma mensagem ou me encontre nas redes sociais.</p>
+        
+        <div class="contato-container">
+            <form id="contactForm" class="contato-form">
+                <div class="input-group">
+                    <input type="text" id="nome" name="nome" placeholder="Seu Nome" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" name="email" placeholder="Seu E-mail" required>
+                </div>
+                <div class="input-group">
+                    <textarea id="mensagem" name="mensagem" placeholder="Sua Mensagem" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn action-btn primary">Enviar Mensagem</button>
+                <div id="form-feedback" class="feedback-msg"></div>
+            </form>
+
+            <div class="contato-links">
+                <a target="_blank" href="https://github.com/AraujoKayke" class="action-btn"><i class="bi bi-github"></i> GitHub</a>
+                <a target="_blank" href="https://www.linkedin.com/in/kaykearaujo/" class="action-btn"><i class="bi bi-linkedin"></i> LinkedIn</a>
+            </div>
         </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Kayke.dev. Todos os direitos reservados.</p>
     </footer>
+
+    <div id="successModal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-icon">
+                <i class="bi bi-check-circle-fill"></i>
+            </div>
+            <h3>Mensagem Enviada!</h3>
+            <p>Obrigado pelo contato. Retornarei o mais breve possível.</p>
+            <button id="closeModal" class="btn action-btn primary">Fechar</button>
+        </div>
+    </div>
 
     <script src="./assets/js/script.js"></script>
 </body>
